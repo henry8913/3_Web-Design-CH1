@@ -1,0 +1,91 @@
+body {
+  background-color: #F8EDE3;
+}
+
+/* ESERCIZIO 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron */
+.jumbotron h1 {
+  font-size: 3rem;
+  color: #6A0572;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* ESERCIZIO 2) Crea un selettore per selezionare tutti i figli dell'elemento navbar */
+.nav > * {
+  color: #A8DADC;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* ESERCIZIO 3) Crea un selettore per selezionare il link "Continua a leggere" del jumbotron */
+.jumbotron a.font-weight-bold {
+  color: #6A0572;
+  text-decoration: none;
+}
+
+/* ESERCIZIO 4) Crea un selettore per selezionare il primo blog post */
+.blog-main .blog-post:first-of-type {
+  background-color: #FFFFFF;
+  border: 2px solid #A8DADC;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* ESERCIZIO 5) Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso */
+.blog-main .blog-post:first-of-type hr {
+  border: none;
+  border-top: 2px solid #FF4C4C;
+  margin: 20px 0;
+}
+
+/* ESERCIZIO 6) Crea un selettore per selezionare i link pari della navbar */
+.nav > *:nth-child(even) {
+  color: #9BAAA1;
+  font-weight: bold;
+}
+
+/* ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio") */
+.blog-sidebar ol:first-of-type li {
+  color: #2F2F2F;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  list-style-type: square;
+}
+
+/* ESERCIZIO 8) Crea un selettore per selezionare l'autore del secondo blog post */
+.blog-main .blog-post:nth-of-type(2) .blog-post-meta a {
+  color: #6A0572;
+  font-weight: bold;
+}
+
+/* ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post */
+.blog-main .blog-post:nth-of-type(3) li:nth-child(2) {
+  color: #A8DADC;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra */
+a.float-right.mb-3.mr-3 {
+  color: #A8DADC;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso */
+a.btn.btn-outline-secondary.disabled {
+  color: #6C757D;
+  background-color: #FFFFFF;
+  border: 2px solid #A8DADC;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+/* ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer */
+.blog-footer p a:nth-of-type(2) {
+  color: #2F2F2F;
+  font-weight: bold;
+  text-decoration: underline;
+}
